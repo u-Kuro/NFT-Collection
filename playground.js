@@ -1,3 +1,5 @@
+// Custom Transaction ID
+console.log("Transaction ID: TRX123456789")
 // Init NFTs Array
 const NFTs = []
 
