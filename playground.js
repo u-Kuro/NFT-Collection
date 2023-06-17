@@ -2,24 +2,29 @@
 const NFTs = []
 
 // Create NFT Object
-mintNFT({name: "Timothee", theme: "fantasy", background: "forest", style: "abstract"});
+mintNFT({
+    name: "Timothee",
+    theme: "Fantasy",
+    background: "Forest",
+    style: "Abstract"
+});
 mintNFT({
     name: "Balake",
-    theme: "space",
-    background: "galaxy",
-    style: "cosmic"
+    theme: "Space",
+    background: "Galaxy",
+    style: "Cosmic"
 });
 mintNFT({
     name: "Jayqualen",
-    theme: "nature",
-    background: "mountain",
-    style: "realistic"
+    theme: "Nature",
+    background: "Mountain",
+    style: "Realistic"
 });
 mintNFT({
     name: "A-aron",
-    theme: "cyberpunk",
-    background: "cityscape",
-    style: "futuristic"
+    theme: "Cyberpunk",
+    background: "Cityscape",
+    style: "Futuristic"
 });
 
 // Output Each Minted NFT Object
@@ -28,12 +33,12 @@ listNFTs(NFTs);
 getTotalSupply(NFTs);
 
 // Functions
-function mintNFT ({ name, theme, background, style }) {
+function mintNFT({ name, theme, background, style }) {
     NFTs.push({ name, theme, background, style });
     console.log(`Minted:      ${name}`);
 }
-function listNFTs (NFTs) {
-    NFTs.forEach(({ name, theme, background, style })=>{
+function listNFTs(NFTs) {
+    NFTs.forEach(({ name, theme, background, style }) => {
         console.log("")
         console.log(`Name:       ${name}`)
         console.log(`Theme:      ${theme}`)
